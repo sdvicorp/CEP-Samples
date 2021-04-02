@@ -347,7 +347,7 @@ declare class Sequence {
 	 * Specifies the sequence settings to use.
 	 * @param newSettings New settings
 	 */	
-	setSettings(newSettings): void
+	setSettings(newSettings: SequenceSettings): void
 
 	/**
 	 *  @returns true if effect analysis is complete
@@ -374,7 +374,7 @@ declare class Sequence {
 	 * @param applyCutsToLinkedAudio Operate on linked audio too?
 	 * @param sensitivity 'LowSensitivity', 'MediumSensitivity', or 'HighSensitivity'
 	 */
-	performCutDetectionOnSelection(action:String, applyCutsToLinkedAudio:Boolean, sensitivity:String)
+	performCutDetectionOnSelection(action:String, applyCutsToLinkedAudio:Boolean, sensitivity:String): boolean
 	/**
 	 *
 	 */
@@ -425,7 +425,7 @@ declare class ProjectManagerOptions {
 	 * 	`CLIP_TRANSFER_COPY`
 	 *  `CLIP_TRANSFER_TRANSCODE`
 	 */
-	clipTransferOption
+	clipTransferOption: string
 	
 	/**
 	 * If `true`, projectItems not used in a sequence are not transferred
@@ -760,7 +760,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	getFormatted(Time, whichFormat:number): String
+	getFormatted(time: Time, whichFormat:number): String
 
 	/**
 	 *
@@ -997,7 +997,7 @@ declare class ProjectManager {
 	 * @param targetBin 		Bin in which new sequence should be created
 	 */
 	
-	createNewSequenceFromClips(newSequenceName: string, projectItems: Array<ProjectItem>, targetBin: ProjectItem)
+	createNewSequenceFromClips(newSequenceName: string, projectItems: Array<ProjectItem>, targetBin: ProjectItem): boolean
 
 	/**
 	 * 
@@ -1443,6 +1443,19 @@ declare class ProjectManager {
 	 *
 	 */
 	unbind(eventName: string): void
+
+        
+        /**
+         * Sets the in point of the sequence; '6.234'.
+         */
+        setInPoint(seconds: number, extractOptions: number): void;
+        setInPoint(ticks: string, extractOptions: number): void;
+
+        /**
+         * Sets the in point of the sequence; '12.321'.
+         */
+        setOutPoint(seconds: number, extractOptions: number): void;
+        setOutPoint(ticks: string, extractOptions: number): void;
   }
   
   /**
@@ -1999,7 +2012,7 @@ declare class ProjectManager {
 	 * @param newValueForTranscodeOnIngest
 	 * @returns the newly-set state for whether or not PPro transcodes files upon ingest.
 	 */
-	setEnableTranscodeOnIngest(newValueForTranscodeOnIngest: boolean)
+	setEnableTranscodeOnIngest(newValueForTranscodeOnIngest: boolean): boolean
   
 	/**
 	 *
@@ -2076,7 +2089,7 @@ declare class ProjectManager {
 	 * @param workspaceName Name of workspace to use
 	 * @returns true if successful
 	 */
-	setWorkspace(workspaceName: string)
+	setWorkspace(workspaceName: string): boolean
 
 	/**
 	 * 
@@ -2295,7 +2308,7 @@ declare class ProjectManager {
   /**
    * In order to use qe please call app.enableQE() first.
    */
-  declare const qe: undefined | any
+  declare const qe: undefined | QEApplication
 
   interface SystemCompatibilityReport {
     /**
