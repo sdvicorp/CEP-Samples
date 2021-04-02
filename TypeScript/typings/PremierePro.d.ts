@@ -525,6 +525,8 @@ declare class ProjectManager {
 	 *
 	 */
 	readonly numSequences: number
+
+        [n: number]: Sequence;
   
 	/**
 	 *
