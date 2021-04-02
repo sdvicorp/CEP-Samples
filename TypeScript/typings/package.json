@@ -1,6 +1,6 @@
 {
   "name": "ppro-typings",
-  "version": "14.0.0",
+  "version": "14.0.1",
   "license": "ISC",
   "main": "",
   "types": "./index.d.ts"
