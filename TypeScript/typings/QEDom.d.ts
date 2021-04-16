@@ -3,9 +3,16 @@ declare class QEApplication {
 }
 
 declare class QEProject {
+  flushCache(): void;
   getActiveSequence(): QESequence | null
   getSequenceAt(index: number): QESequence
   newSequence(name: string, presetPath: string): boolean
+}
+
+declare class QEProjectItemCollection {
+  flushCache(): void;
+  getSequenceAt(index: number): QESequence;
+  getBinAt(index: number): QEProjectItemCollection;
 }
 
 declare class QESequence {
