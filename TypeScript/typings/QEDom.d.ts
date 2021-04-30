@@ -2,20 +2,16 @@ declare class QEApplication {
   readonly project: QEProject
 }
 
-declare class QEProject {
-  flushCache(): void;
-  getActiveSequence(): QESequence | null
-  getBinAt(index: number): QEProjectItemCollection;
-  getSequenceAt(index: number): QESequence
-  newSequence(name: string, presetPath: string): boolean
-}
-
 declare class QEProjectItemCollection {
   flushCache(): void;
   getBinAt(index: number): QEProjectItemCollection;
   getSequenceAt(index: number): QESequence;
   numBins: number;
   numSequences: number;
+}
+
+declare class QEProject extends QEProjectItemCollection {
+  getActiveSequence(): QESequence | null
 }
 
 declare class QESequence {
