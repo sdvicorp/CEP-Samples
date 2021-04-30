@@ -14,11 +14,14 @@ declare class QEProjectItemCollection {
   flushCache(): void;
   getBinAt(index: number): QEProjectItemCollection;
   getSequenceAt(index: number): QESequence;
+  numBins: number;
+  numSequences: number;
 }
 
 declare class QESequence {
   getVideoTrackAt(index: number): QETrack
   getAudioTrackAt(index: number): QETrack
+  guid: string;
 }
 
 declare class QETrack {
