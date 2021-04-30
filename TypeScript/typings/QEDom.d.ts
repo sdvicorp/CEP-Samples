@@ -11,7 +11,8 @@ declare class QEProjectItemCollection {
 }
 
 declare class QEProject extends QEProjectItemCollection {
-  getActiveSequence(): QESequence | null
+  getActiveSequence(): QESequence | null;
+  newSequence(name: string, presetPath: string): boolean;
 }
 
 declare class QESequence {
