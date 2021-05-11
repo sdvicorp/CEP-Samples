@@ -32,15 +32,15 @@ interface XMPPropertyIterator {
 }
 
 interface XMPMetaInstance {
-  doesPropertyExist(namespace:String, value:String): Boolean
-  getProperty(namespace:String, property:String): XMPProperty
-  setProperty(namespace:String, property:String, value:String, options:number): Boolean
-  countArrayItems(namespace:String, property:String): Number
-  getArrayItem(namespace:String, property:String, itemIndex:Number): XMPProperty
-  deleteProperty(namespace:String, property:String): Boolean
-  appendArrayItem(namespace:String, property:String, arrayOptions:String, valueToAppend:String, valueOptions:String): Boolean
-  dumpObject():String
-  serialize(): String
+  doesPropertyExist(namespace:string, value:string): boolean
+  getProperty(namespace:string, property:string): XMPProperty
+  setProperty(namespace:string, property:string, value:string, options:number): boolean
+  countArrayItems(namespace:string, property:string): Number
+  getArrayItem(namespace:string, property:string, itemIndex:Number): XMPProperty
+  deleteProperty(namespace:string, property:string): boolean
+  appendArrayItem(namespace:string, property:string, arrayOptions:string, valueToAppend:string, valueOptions:string): boolean
+  dumpObject():string
+  serialize(): string
   // Instance stuff.
 
   iterator(): XMPPropertyIterator;

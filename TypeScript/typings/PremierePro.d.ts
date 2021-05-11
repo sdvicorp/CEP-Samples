@@ -33,11 +33,11 @@ declare class SequenceSettings {
 	audioDisplayFormat:			number
 	audioSampleRate:			Time
 	compositeLinearColor:		boolean
-	editingMode:				String
+	editingMode:				string
 	maximumBitDepth: 			boolean
 	maximumRenderQuality: 		boolean
-	previewCode:				String
-	previewFileFormat:			String
+	previewCode:				string
+	previewFileFormat:			string
 	previewFrameHeight:			number
 	previewFrameWidth:			number
 	videoDisplayFormat:			number
@@ -51,7 +51,7 @@ declare class SequenceSettings {
 	vrProjection:				number
 	vrVertCapturedView:			number
 	workingColorSpaceList:		Array<any>
-	workingColorSpace:			String
+	workingColorSpace:			string
 }
 
 /**
@@ -164,7 +164,7 @@ declare class Sequence {
 	 * 
 	 * If there is no selection, track targeting determines which clips are included in the new sequence.
 	 */
-	createSubsequence(ignoreMapping:Boolean): Sequence
+	createSubsequence(ignoreMapping:boolean): Sequence
 
 	/**
 	 * Exports a new FCP XML file representing this sequence.
@@ -268,18 +268,18 @@ declare class Sequence {
 	 * @param audioTrackOffset The offset from first audio track to targeted track
 	 * @returns newly-created `trackItem` representing the .mogrt
 	 */
-	importMGT(pathToMOGRT:String, timeInTicks:String, videoTrackOffset:number, audioTrackOffset:number): TrackItem
+	importMGT(pathToMOGRT:string, timeInTicks:string, videoTrackOffset:number, audioTrackOffset:number): TrackItem
 	
 	/**
 	 * Returns `true` if work area is enabled.
 	 */
-	isWorkAreaEnabled(): Boolean
+	isWorkAreaEnabled(): boolean
 
 	/**
 	 * Sets the enabled state of the seqeuence work area.
 	 * @param enableState The desired state
 	 */
-	setWorkAreaEnabled(enableState:Boolean): void
+	setWorkAreaEnabled(enableState:boolean): void
 
 	/**
 	 * Returns the work area in point, in seconds.
@@ -353,7 +353,7 @@ declare class Sequence {
 	 *  @returns true if effect analysis is complete
 	 */
 	
-	isDoneAnalyzingForVideoEffects(): Boolean
+	isDoneAnalyzingForVideoEffects(): boolean
 
 
 	/**
@@ -366,7 +366,7 @@ declare class Sequence {
 	 */
 
 
-	autoReframeSequence(numerator:Number, denominator:Number, motionPreset:String, sequenceName:String, nest:Boolean): Sequence
+	autoReframeSequence(numerator:Number, denominator:Number, motionPreset:string, sequenceName:string, nest:boolean): Sequence
 
 	/**
 	 * 
@@ -374,7 +374,7 @@ declare class Sequence {
 	 * @param applyCutsToLinkedAudio Operate on linked audio too?
 	 * @param sensitivity 'LowSensitivity', 'MediumSensitivity', or 'HighSensitivity'
 	 */
-	performCutDetectionOnSelection(action:String, applyCutsToLinkedAudio:Boolean, sensitivity:String): boolean
+	performCutDetectionOnSelection(action:string, applyCutsToLinkedAudio:boolean, sensitivity:string): boolean
 	/**
 	 *
 	 */
@@ -455,7 +455,7 @@ declare class ProjectManagerOptions {
 	/**
 	 * The containing directory for the consolidation/transfer.
 	 */
-	destinationPath : String
+	destinationPath : string
 
 	/**
 	 * If `true`, all sequences in the project will be transferred.
@@ -470,7 +470,7 @@ declare class ProjectManagerOptions {
 	/**
 	 * Path the the encoder preset (.epr file) to be used.
 	 */
-	encoderPresetFilePath : String
+	encoderPresetFilePath : string
 
 	/**
 	 * If `true`, image sequences will be transcoded.
@@ -762,7 +762,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	getFormatted(time: Time, whichFormat:number): String
+	getFormatted(time: Time, whichFormat:number): string
 
 	/**
 	 *
@@ -939,7 +939,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	importAEComps(aepPath: String, compsToImport: Array<any>, projectBin: ProjectItem): boolean
+	importAEComps(aepPath: string, compsToImport: Array<any>, projectBin: ProjectItem): boolean
 
 	/**
 	 *
@@ -960,7 +960,7 @@ declare class ProjectManager {
 	 * @param projectPath Path to project from which to import sequences.
 	 * @param sequences An array of sequence IDs to import, from the project.
 	 */
-	importSequences(projectPath: String, sequencesToImport: Array<string>): boolean
+	importSequences(projectPath: string, sequencesToImport: Array<string>): boolean
   
 	/**
 	 *
@@ -1035,7 +1035,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	name: String
+	name: string
 	
 	/**
 	 *
@@ -1090,12 +1090,12 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	isTargeted(): Boolean
+	isTargeted(): boolean
   
 	/**
 	 *
 	 */
-	setTargeted(isTargeted:Boolean, shouldBroadcast:Boolean): Boolean
+	setTargeted(isTargeted:boolean, shouldBroadcast:boolean): boolean
 
 	/**
 	 *
@@ -1205,7 +1205,7 @@ declare class ProjectManager {
 	/**
 	 * 
 	 */
-	getColorSpace(): String
+	getColorSpace(): string
 
 	/**
 	 *
@@ -1393,7 +1393,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	setProjectMetadata(buffer: String, keysToBeUpdated: Array<string>): void
+	setProjectMetadata(buffer: string, keysToBeUpdated: Array<string>): void
   
 	/**
 	 *
@@ -1413,7 +1413,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	setXMPMetadata(buffer: String): boolean
+	setXMPMetadata(buffer: string): boolean
   
 	/**
 	 *
@@ -1424,12 +1424,12 @@ declare class ProjectManager {
 	 * 
 	 * @param newColorSpace value must be available via sequence.workingColorSpaceList 
 	 */
-	setOverrideColorSpace(newColorSpace: String): void
+	setOverrideColorSpace(newColorSpace: string): void
 
 	/**
 	 * 
 	 */
-	getColorSpace(): String
+	getColorSpace(): string
 
 	/**
 	 * 
@@ -1806,7 +1806,7 @@ declare class ProjectManager {
 	/**
 	 * 
 	 */
-	lastExportMediaFolder():String
+	lastExportMediaFolder():string
   
 	/**
 	 *
@@ -1880,17 +1880,17 @@ declare class ProjectManager {
 	  /**
 	   * 
 	   */
-	  getLocked(project:Project): Boolean
+	  getLocked(project:Project): boolean
 
 	  /**
 	   * 
 	   */
-	  setLocked(project:Project, newLockState: Boolean): void
+	  setLocked(project:Project, newLockState: boolean): void
 
 	  /**
 	   * 
 	   */
-	  moveToTrash(projectPath:String, suppressUI:Boolean, saveProject:Boolean): Boolean
+	  moveToTrash(projectPath:string, suppressUI:boolean, saveProject:boolean): boolean
 	  
   }
   /**
@@ -2059,7 +2059,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	getProjectFromViewID(viewID:String): Project
+	getProjectFromViewID(viewID:string): Project
   
 	/**
 	 *
@@ -2069,12 +2069,12 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	getProjectViewSelection(viewID:String): Array<any>
+	getProjectViewSelection(viewID:string): Array<any>
 
 	/**
 	 *
 	 */
-	setProjectViewSelection(projectItems: Array<ProjectItem>, viewID: String): void
+	setProjectViewSelection(projectItems: Array<ProjectItem>, viewID: string): void
 
 	/**
 	 *
