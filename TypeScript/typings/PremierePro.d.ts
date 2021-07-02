@@ -1318,7 +1318,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	findItemsMatchingMediaPath(matchString: string, ignoreSubclips?: number): void
+	findItemsMatchingMediaPath(matchString: string, ignoreSubclips?: number): Array<ProjectItem>
   
 	/**
 	 *
