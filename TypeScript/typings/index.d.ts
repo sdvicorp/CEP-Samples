@@ -1,4 +1,5 @@
 /// <reference path="ExtendScript.d.ts" />
+/// <reference path="ExternalObject.d.ts" />
 /// <reference path="global.d.ts" />
 /// <reference path="PremierePro.d.ts" />
 /// <reference path="QEDom.d.ts" />

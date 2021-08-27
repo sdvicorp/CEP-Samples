@@ -1,5 +1,4 @@
-// A commonly used construct for loading XMPScript into
-// ExtendScript contexts.
+// A commonly used construct for loading XMPScript into ExtendScript contexts.
 interface ExternalObjectConstructor {
   AdobeXMPScript: ExternalObject | undefined;
 }
