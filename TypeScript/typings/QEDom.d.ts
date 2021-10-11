@@ -2,15 +2,15 @@ declare class QEApplication {
   readonly project: QEProject
 }
 
-declare class QEProjectItemCollection {
+declare class QEProjectItemContainer {
   flushCache(): void;
-  getBinAt(index: number): QEProjectItemCollection;
+  getBinAt(index: number): QEProjectItemContainer;
   getSequenceAt(index: number): QESequence;
   numBins: number;
   numSequences: number;
 }
 
-declare class QEProject extends QEProjectItemCollection {
+declare class QEProject extends QEProjectItemContainer {
   getActiveSequence(): QESequence | null;
   newSequence(name: string, presetPath: string): boolean;
 }
