@@ -6,8 +6,10 @@ declare class QEProjectItemContainer {
   flushCache(): void;
   getBinAt(index: number): QEProjectItemContainer;
   getSequenceAt(index: number): QESequence;
+  name: string;
   numBins: number;
   numSequences: number;
+  numSequenceItems: number;
 }
 
 declare class QEProject extends QEProjectItemContainer {
