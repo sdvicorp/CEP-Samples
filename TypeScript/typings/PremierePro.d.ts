@@ -2195,12 +2195,13 @@ declare class ProjectManager {
 	 *
 	 */
 	comments: string
-  
-	/**
-	 *
-	 */
-	end: Time
-  
+
+        /**
+         *
+         */
+        get end(): Time
+        set end(value: number): void
+
 	/**
 	 *
 	 */
@@ -2210,12 +2211,13 @@ declare class ProjectManager {
 	 *
 	 */
 	name: string
-  
-	/**
-	 *
-	 */
-	start: Time
-  
+
+        /**
+         *
+         */
+        get start(): Time
+        set start(value: number): void
+
 	/**
 	 *
 	 */
