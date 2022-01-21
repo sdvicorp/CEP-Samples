@@ -378,7 +378,7 @@ declare class Sequence {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
 	}
 
 
@@ -514,7 +514,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
 }
   
   /**
@@ -541,7 +541,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -586,7 +586,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   
 	/**
 	 *
@@ -651,7 +651,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -681,7 +681,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   
 	/**
 	 *
@@ -726,7 +726,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
 
 	/**
 	 * 
@@ -772,7 +772,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -812,7 +812,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -1025,7 +1025,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
 
   /**
@@ -1100,7 +1100,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -1215,7 +1215,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -1444,7 +1444,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
 
         
         /**
@@ -1482,7 +1482,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -1507,7 +1507,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   
 	/**
 	 *
@@ -1537,7 +1537,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   
 	/**
 	 *
@@ -1568,7 +1568,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   
 	/**
 	 *
@@ -1628,7 +1628,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -1653,7 +1653,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -1678,7 +1678,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -1713,7 +1713,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -1811,7 +1811,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -1856,7 +1856,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   /**
    * 
@@ -2108,7 +2108,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   
 	/**
 	 *
@@ -2184,7 +2184,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -2276,7 +2276,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
@@ -2306,7 +2306,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	unbind(eventName: string): void
+	unbind(eventName: string, function_: any): void
   }
   
   /**
