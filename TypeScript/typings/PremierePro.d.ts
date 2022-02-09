@@ -112,6 +112,11 @@ declare class Sequence {
 	/**
 	 * 
 	 */
+	audioDisplayFormat: number
+
+	/**
+	 * 
+	 */
 	videoDisplayFormat: number
   
 	/**
@@ -862,7 +867,7 @@ declare class ProjectManager {
 	/**
 	 *
 	 */
-	closeDocument(): boolean
+	closeDocument(saveFirst?: boolean, promptIfDirty?: boolean): boolean
   
 	/**
 	 *
@@ -1483,6 +1488,11 @@ declare class ProjectManager {
 	 *
 	 */
 	unbind(eventName: string, function_: any): void
+  
+	/**
+	 *
+	 */
+	[index: number]: Project
   }
   
   /**
