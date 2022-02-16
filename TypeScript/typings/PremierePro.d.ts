@@ -161,7 +161,25 @@ declare class Sequence {
 	 * @returns the clone Sequence.
 	 */
 	clone(): Sequence
-	
+
+
+	static readonly CAPTION_FORMAT_608: number;
+	static readonly CAPTION_FORMAT_708: number;
+	static readonly CAPTION_FORMAT_TELETEXT: number;
+	static readonly CAPTION_FORMAT_OPEN_EBU: number;
+	static readonly CAPTION_FORMAT_OP42: number;
+	static readonly CAPTION_FORMAT_OP47: number;
+	static readonly CAPTION_FORMAT_SUBTITLE:number;
+
+	/**
+	 * Creates a new captions track from project item.
+	 * @param item The full file path (with file name) to create.
+	 * @param start Optional; quiets any warnings or errors encountered during export.
+	 * @param format The format of the The full file path (with file name) to create.
+	 * @param outputStreamIndex ignored
+	 */
+	createCaptionTrack(item: ProjectItem, start:number, format: number, outputStreamIndex: number) : boolean;
+
 	/**
 	 * Creates a new sequence from the source sequence's in and out points.
 	 * @param ignoreMapping If True the current selection, not track targeting, will determine 
