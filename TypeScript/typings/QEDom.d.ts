@@ -19,6 +19,10 @@ declare class QEProject extends QEProjectItemContainer {
 
 declare class QESequence {
   audioFrameRate: number;
+  CTI: {
+    ticks: string;
+    secs: number;
+  };
   getVideoTrackAt(index: number): QETrack
   getAudioTrackAt(index: number): QETrack
   guid: string;
