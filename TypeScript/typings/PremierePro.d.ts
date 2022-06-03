@@ -173,12 +173,12 @@ declare class Sequence {
 
 	/**
 	 * Creates a new captions track from project item.
-	 * @param item The full file path (with file name) to create.
-	 * @param start Optional; quiets any warnings or errors encountered during export.
-	 * @param format The format of the The full file path (with file name) to create.
+	 * @param item The project item from which to create a captions track
+	 * @param start number of ticks offset into the project item from which to start placing captions, as a string.
+	 * @param format The format of the captions track.
 	 * @param outputStreamIndex ignored
 	 */
-	createCaptionTrack(item: ProjectItem, start:number, format: number, outputStreamIndex: number) : boolean;
+	createCaptionTrack(item: ProjectItem, start:string, format: number, outputStreamIndex: number) : boolean;
 
 	/**
 	 * Creates a new sequence from the source sequence's in and out points.
